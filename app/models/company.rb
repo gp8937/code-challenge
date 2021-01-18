@@ -1,17 +1,19 @@
-require 'memoist'
-
 class Company < ApplicationRecord
-  extend Memoist
 
   has_rich_text :description
 
   validates_with CompanyEmailValidator
 
-  def address
-    unless zip_code.empty? 
-      return ZipCodes.identify(zip_code)
-    end
+  before_save :populate_address_fields
+
+  private 
+
+  def populate_address_fields
+    return if zip_code.empty? 
+    address = ZipCodes.identify(zip_code)
+    return if address.nil?
+    self.city = address[:city]
+    self.state = address[:state_code]
   end
-  memoize :address
 
 end

@@ -76,6 +76,17 @@
     </div>
 
     <div class="row my-lg-3">
+      <div class="col-lg-3">
+        <label><strong>Color</strong><br><small class="text-muted">Brand color of company</small></label>
+      </div>
+      <div class="col-lg offset-lg-1">
+          <div class="form-group">
+            <%= f.text_field :color,  class: "form-control", placeholder: "#000" %>
+          </div>
+      </div>
+    </div>
+
+    <div class="row my-lg-3">
       <div class="col">
         <div class="form-group">
           <%= f.submit class: "btn btn-success"%>
