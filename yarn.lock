@@ -691,6 +691,11 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
+"@r-tek/colr_pickr@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@r-tek/colr_pickr/-/colr_pickr-2.0.0.tgz#51a74ffffe277cb598754be3e2352048d5458611"
+  integrity sha512-J4T5Q4EvEA0snR9VXY08WuqhI5v4LYfI5WoUiqgg/gFbu2vzeqjNAZTo8owI68MsaFzLHvL3p3MRUXONYuUUTg==
+
 "@rails/actioncable@^6.0.0":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.0.2.tgz#bcba9bcd6ee09a47c6628336e07399a68ca87814"
@@ -777,6 +782,13 @@
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@stimulus/webpack-helpers/-/webpack-helpers-1.1.1.tgz#eff60cd4e58b921d1a2764dc5215f5141510f2c2"
   integrity sha512-XOkqSw53N9072FLHvpLM25PIwy+ndkSSbnTtjKuyzsv8K5yfkFB2rv68jU1pzqYa9FZLcvZWP4yazC0V38dx9A==
+
+"@taufik-nurrohman/color-picker@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/@taufik-nurrohman/color-picker/-/color-picker-2.1.6.tgz#03bee685b47dd303e7bf3a5ddc9158a3a853c83d"
+  integrity sha512-aVLx8XGkvAprWHaZ1J7dYUYnGv+KOBq7IRV5lUU5l8tGFjxARl0j3fzD2p2sLe9Jj2Jf6ejBHBUNeMSqottPgg==
+  dependencies:
+    opencollective-postinstall "^2.0.2"
 
 "@types/events@*":
   version "3.0.0"
@@ -4171,6 +4183,11 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
   resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
   dependencies:
     wrappy "1"
+
+opencollective-postinstall@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
+  integrity sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==
 
 opn@^5.5.0:
   version "5.5.0"

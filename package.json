@@ -2,11 +2,13 @@
   "name": "code_challenge",
   "private": true,
   "dependencies": {
+    "@r-tek/colr_pickr": "^2.0.0",
     "@rails/actioncable": "^6.0.0",
     "@rails/actiontext": "^6.0.2-2",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
+    "@taufik-nurrohman/color-picker": "^2.1.6",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.0",
     "popper.js": "^1.16.1",
