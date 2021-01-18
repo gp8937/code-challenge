@@ -13,9 +13,5 @@ module ApplicationHelper
     return "d-none" if should_hide
     return nil
   end
-
-  def has_any_error?(model, fields)
-    fields.any? { |f| model.errors[f].present? }
-  end
   
 end
