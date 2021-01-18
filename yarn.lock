@@ -691,11 +691,6 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
-"@r-tek/colr_pickr@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@r-tek/colr_pickr/-/colr_pickr-2.0.0.tgz#51a74ffffe277cb598754be3e2352048d5458611"
-  integrity sha512-J4T5Q4EvEA0snR9VXY08WuqhI5v4LYfI5WoUiqgg/gFbu2vzeqjNAZTo8owI68MsaFzLHvL3p3MRUXONYuUUTg==
-
 "@rails/actioncable@^6.0.0":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.0.2.tgz#bcba9bcd6ee09a47c6628336e07399a68ca87814"

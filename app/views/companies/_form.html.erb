@@ -20,6 +20,13 @@
       <div class="col-lg offset-lg-1">
         <div class="form-group">
           <%= f.text_field :zip_code, class: "form-control", placeholder: "93003", required: true %>
+          <% if @company.errors[:zip_code].present? %>
+            <small class="text-danger">
+              <% @company.errors.full_messages_for(:zip_code).each do |msg| %>
+                <%= msg %>
+              <% end %>
+            </small>
+          <% end %>
         </div>
       </div>
     </div>

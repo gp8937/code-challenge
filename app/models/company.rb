@@ -4,14 +4,19 @@ class Company < ApplicationRecord
 
   validates_with CompanyEmailValidator
 
-  before_save :populate_address_fields
+  before_validation :populate_address_fields
 
   private 
 
   def populate_address_fields
     return if zip_code.empty? 
     address = ZipCodes.identify(zip_code)
-    return if address.nil?
+    if address.nil?
+      self.city = nil
+      self.state = nil
+      errors.add :zip_code, "not a valid US zip code"
+      return
+    end
     self.city = address[:city]
     self.state = address[:state_code]
   end
