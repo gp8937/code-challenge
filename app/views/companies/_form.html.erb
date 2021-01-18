@@ -73,6 +73,9 @@
       <div class="col">
         <div class="form-group">
           <%= f.submit class: "btn btn-success"%>
+          <% if @company.persisted? %>
+            <%= link_to "Remove Company", @company, class: "btn btn-danger", method: "delete", data: { confirm: "Are you sure?" } %>
+          <% end %>
         </div>
       </div>
     </div>
