@@ -12,7 +12,11 @@
     <div class="container p-5 text-white">
       <h1><%= @company.name %></h1>
       <h3><mark>City, State</mark></h3>
-      <pre><mark>☝️ This is what needs to be udpated. Examples: Atlanta, GA or Nashvile, TN</mark></pre>
+      <% if @company.address.present? %>
+        <%= @company.address[:city] %>, <%= @company.address[:state_code] %>
+      <% else %>
+        <span>Could not be located </span>
+      <% end %>
     </div>
   </div>
 
