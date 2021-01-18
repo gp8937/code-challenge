@@ -8,5 +8,10 @@ module ApplicationHelper
       notice: "alert-info"
     }.stringify_keys[flash_type.to_s] || flash_type.to_s
   end
+
+  def hidden_class(should_hide)
+    return "d-none" if should_hide
+    return nil
+  end
   
 end

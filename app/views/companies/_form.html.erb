@@ -1,11 +1,5 @@
 <div class="py-5">
-  <%= form_for @company do |f| %>
-
-    <% if @company.errors.any? %>
-        <% @company.errors.full_messages.each do |msg| %>
-          <div class="alert alert-danger"><%= msg %></div>
-        <% end %>
-    <% end %>
+  <%= form_for @company, data: { controller: "company-form" } do |f| %>
 
     <div class="row my-lg-3">
       <div class="col-lg-3">
@@ -59,7 +53,10 @@
       </div>
       <div class="col-lg offset-lg-1">
         <div class="form-group">
-          <%= f.text_field :email, class: "form-control", placeholder: "hello@getmainstreet.com"%>
+          <%= f.text_field :email, class: "form-control", placeholder: "hello@getmainstreet.com", data: { target: "company-form.emailField" }%>
+          <small class="text-danger <%= hidden_class(@company.errors[:email].empty?) %>" data-target="company-form.emailFieldError">
+            Expected email domain to be getmainstreet.com
+          </small>
         </div>
       </div>
     </div>
@@ -89,7 +86,7 @@
     <div class="row my-lg-3">
       <div class="col">
         <div class="form-group">
-          <%= f.submit class: "btn btn-success"%>
+          <%= f.submit class: "btn btn-success", data: { target: "company-form.submitButton" } %>
           <% if @company.persisted? %>
             <%= link_to "Remove Company", @company, class: "btn btn-danger", method: "delete", data: { confirm: "Are you sure?" } %>
           <% end %>
