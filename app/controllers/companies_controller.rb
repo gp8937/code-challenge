@@ -36,6 +36,7 @@ class CompaniesController < ApplicationController
     if @company.destroy
       redirect_to companies_path, notice: "Company was removed successfully"
     else
+      puts @company.errors
       render :edit
     end
   end
